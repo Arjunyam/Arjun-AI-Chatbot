@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101522">
+  <meta name="description" content="Arjun AI — an intelligent AI chat assistant.">
+  <title>Arjun AI Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">A</div><div><strong>Arjun AI</strong><span>Intelligent assistant</span></div></div>
+      <button class="new-chat" id="new-chat">＋ <span>New chat</span></button>
+      <div class="side-label">YOUR SPACE</div>
+      <div class="history" id="history"><p class="history-empty">Your recent chats will appear here.</p></div>
+      <div class="sidebar-bottom"><div class="status-dot"></div><span>Ready to help</span><button id="clear-history" title="Clear chat history">Clear</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-button" id="menu-button" aria-label="Toggle menu">☰</button>
+        <div class="mobile-brand">Arjun <b>AI</b></div>
+        <div class="model-pill"><span></span> AI Assistant</div>
+      </header>
+      <section class="chat-area" id="chat-area">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <p class="eyebrow">YOUR AI COMPANION</p>
+          <h1>How can I help<br><span>you today?</span></h1>
+          <p class="welcome-copy">Ask a question, explore an idea, or get help with something you're working on.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Explain artificial intelligence in simple terms."><span>✧</span><b>Learn something</b><small>Explain a complex topic simply</small></button>
+            <button class="suggestion" data-prompt="Help me brainstorm a creative project idea."><span>⌁</span><b>Brainstorm ideas</b><small>Explore ideas and possibilities</small></button>
+            <button class="suggestion" data-prompt="Write a professional email requesting a meeting."><span>✎</span><b>Write something</b><small>Draft, improve, or rewrite text</small></button>
+            <button class="suggestion" data-prompt="Give me a beginner-friendly Python programming exercise."><span>⌘</span><b>Code with me</b><small>Understand code and solve problems</small></button>
+          </div>
+        </div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+      <footer class="composer-wrap">
+        <form class="composer" id="chat-form">
+          <textarea id="prompt" rows="1" placeholder="Message Arjun AI..." aria-label="Message Arjun AI" maxlength="8000"></textarea>
+          <button class="send-button" id="send-button" type="submit" aria-label="Send message">↑</button>
+        </form>
+        <p class="disclaimer">Arjun AI can make mistakes. Check important information.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
