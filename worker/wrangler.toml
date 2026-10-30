@@ -1,0 +1,7 @@
+name = "arjun-ai-api"
+main = "index.js"
+compatibility_date = "2026-10-30"
+
+[vars]
+OPENAI_MODEL = "gpt-4.1-mini"
+# Set ALLOWED_ORIGINS in the Cloudflare dashboard to your exact GitHub Pages URL.
